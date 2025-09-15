@@ -1,4 +1,5 @@
 streamlit==1.28.1
 SpeechRecognition==3.10.0
 standard-aifc
-PyAudio==0.2.11
+pyaudio==0.2.11
+
