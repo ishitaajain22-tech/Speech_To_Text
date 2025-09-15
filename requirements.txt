@@ -4,4 +4,4 @@ sounddevice==0.4.6
 soundfile==0.12.1
 wave==0.0.2
 numpy==1.24.3
-pyaudio==0.2.11
+
