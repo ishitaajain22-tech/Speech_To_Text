@@ -114,10 +114,6 @@ class StreamlitSpeechTranscriber:
         try:
             if engine == "google":
                 text = st.session_state.recognizer.recognize_google(audio_data)
-            elif engine == "sphinx":
-                text = st.session_state.recognizer.recognize_sphinx(audio_data)
-            else:
-                text = st.session_state.recognizer.recognize_google(audio_data)
             
             return text, True
             
@@ -253,14 +249,14 @@ def main():
         # Engine selection
         engine = st.selectbox(
             "Recognition Engine",
-            ["google", "sphinx"],
-            help="Google requires internet, Sphinx works offline"
+            ["google"],
+            help="Google requires internet"
         )
         
         # Language selection (for display purposes)
         language = st.selectbox(
             "Language",
-            ["English", "Spanish", "French", "German", "Chinese"],
+            ["English", "Hindi", "Sanskit", "Punjab", "Urdu"],
             help="Currently supports English only. More languages coming soon!"
         )
         
